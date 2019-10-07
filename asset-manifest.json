@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/fast-read/static/css/main.34de6062.chunk.css",
-    "main.js": "/fast-read/static/js/main.78722e38.chunk.js",
-    "main.js.map": "/fast-read/static/js/main.78722e38.chunk.js.map",
-    "runtime-main.js": "/fast-read/static/js/runtime-main.bf999dc2.js",
-    "runtime-main.js.map": "/fast-read/static/js/runtime-main.bf999dc2.js.map",
-    "static/js/2.0339c279.chunk.js": "/fast-read/static/js/2.0339c279.chunk.js",
-    "static/js/2.0339c279.chunk.js.map": "/fast-read/static/js/2.0339c279.chunk.js.map",
-    "index.html": "/fast-read/index.html",
-    "precache-manifest.91f931ecf51b736ed2aec7de8ff78630.js": "/fast-read/precache-manifest.91f931ecf51b736ed2aec7de8ff78630.js",
-    "service-worker.js": "/fast-read/service-worker.js",
-    "static/css/main.34de6062.chunk.css.map": "/fast-read/static/css/main.34de6062.chunk.css.map"
+    "main.css": "/fast-read-hamza/static/css/main.34de6062.chunk.css",
+    "main.js": "/fast-read-hamza/static/js/main.dbadcf83.chunk.js",
+    "main.js.map": "/fast-read-hamza/static/js/main.dbadcf83.chunk.js.map",
+    "runtime-main.js": "/fast-read-hamza/static/js/runtime-main.e951605f.js",
+    "runtime-main.js.map": "/fast-read-hamza/static/js/runtime-main.e951605f.js.map",
+    "static/js/2.0339c279.chunk.js": "/fast-read-hamza/static/js/2.0339c279.chunk.js",
+    "static/js/2.0339c279.chunk.js.map": "/fast-read-hamza/static/js/2.0339c279.chunk.js.map",
+    "index.html": "/fast-read-hamza/index.html",
+    "precache-manifest.7d504cea66d2b30570fd7923634a4a62.js": "/fast-read-hamza/precache-manifest.7d504cea66d2b30570fd7923634a4a62.js",
+    "service-worker.js": "/fast-read-hamza/service-worker.js",
+    "static/css/main.34de6062.chunk.css.map": "/fast-read-hamza/static/css/main.34de6062.chunk.css.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.bf999dc2.js",
+    "static/js/runtime-main.e951605f.js",
     "static/js/2.0339c279.chunk.js",
     "static/css/main.34de6062.chunk.css",
-    "static/js/main.78722e38.chunk.js"
+    "static/js/main.dbadcf83.chunk.js"
   ]
 }
