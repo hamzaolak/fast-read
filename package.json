@@ -2,7 +2,7 @@
   "name": "fast-read",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://hamzaolak.github.io/fast-read",
+  "homepage":"https://hamzaolak.github.io/fast-read",
   "dependencies": {
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
