@@ -1,10 +1,13 @@
 import React from 'react';
 
+import { AppWrapper, Header, Content } from './App.style'
+
 function App() {
   return (
-    <div >
-      Hello fast-read
-    </div>
+    <AppWrapper >
+      <Header>Header</Header>
+      <Content>Content</Content>
+    </AppWrapper>
   );
 }
 
