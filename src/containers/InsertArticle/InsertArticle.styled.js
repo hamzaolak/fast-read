@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { colors } from 'utils'
+import { colors, deviceSizes } from 'utils'
 
 export const InsertArticleWrapper = styled.div`
     display: flex;
@@ -16,9 +16,8 @@ export const TextArea = styled.textarea`
     border-width: 1px;
     border-radius: 20px;
     height: 340px;
-    width: 720px;
     font-size: 16px;
-    padding: 20px;
+    padding: 10px;
     text-align: ${({ article }) => article ? 'left' : 'center'};
     line-height: ${({ article }) => article ? '18px' : '340px'};
     font-color: ${({ article }) => article ? colors.codGray : colors.tundora}
@@ -28,7 +27,13 @@ export const TextArea = styled.textarea`
         line-height: 18px;
     }
 
-    @media (max-width: 720px) {
-        width: 80%;
+    width: 720px;
+
+    @media (max-width: ${deviceSizes.tablet}) {
+        width: 450px;
     }
+    @media (max-width: ${deviceSizes.mobile}) {
+        width: 290px;
+    }
+
 `

@@ -1,4 +1,5 @@
 {
     "appName": "Fast Read",
-    "insertArticle.placeholder": "Paste The Article Here"
+    "insertArticle.placeholder": "Paste The Article Here",
+    "insertArticle.button": "Start Read"
 }
