@@ -1,0 +1,1 @@
+export const INSERT_ARTICLE = 'INSERT_ARTICLE'

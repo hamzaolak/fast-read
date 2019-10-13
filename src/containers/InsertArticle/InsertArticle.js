@@ -1,17 +1,20 @@
 import React, { useState } from 'react'
 import { injectIntl } from 'react-intl';
 import { Link } from "react-router-dom";
+import { connect } from 'react-redux'
 
 import Button from 'components/Button';
-import { TextArea } from './InsertArticle.styled'
 import { Margin, PageWrapper } from 'components/Layouts';
 import { ArrowRight } from 'components/Icons';
+import { TextArea } from './InsertArticle.styled'
 
 import { colors } from 'utils';
+import { insertAticle } from './InsertArticle.action';
 
-const InsertArticle = ({ intl }) => {
+const InsertArticle = ({ intl, insertArticle }) => {
     const [article, setArticle] = useState('');
     const placeholder = intl.formatMessage({ id: 'insertArticle.placeholder' });
+    const tooLongWordMsg = intl.formatMessage({ id: 'insertArticle.action.tooLongWord' });
 
     const handleChangeArticle = ({ target: { value } }) => {
         setArticle(value)
@@ -29,6 +32,7 @@ const InsertArticle = ({ intl }) => {
                         width="740"
                         tWidth="470"
                         mWidth="310"
+                        onClick={() => insertArticle(article,tooLongWordMsg)}
                         rightIcon={<ArrowRight fill={colors.chelseaCucumber} />} />
                 </Link>
             </Margin>
@@ -36,4 +40,13 @@ const InsertArticle = ({ intl }) => {
     )
 }
 
-export default injectIntl(InsertArticle);
+const mapDispatchToProps = dispatch => {
+    return {
+        insertArticle: (article, tooLongWord) => dispatch(insertAticle(article, tooLongWord)),
+    }
+}
+
+export default connect(
+    null,
+    mapDispatchToProps
+)(injectIntl(InsertArticle));
