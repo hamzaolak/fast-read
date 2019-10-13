@@ -1,8 +1,10 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import { AppWrapper, Header, Content } from './App.style'
-import InsertArticle from 'containers/InsertArticle/InsertArticle'
+import InsertArticle from 'containers/InsertArticle'
+import ReadArticle from 'containers/ReadArticle';
 
 function App() {
   return (
@@ -11,7 +13,12 @@ function App() {
         <FormattedMessage id='appName' />
       </Header>
       <Content>
-        <InsertArticle />
+        <Router>
+          <Switch>
+            <Route exact path='/' component={InsertArticle} />
+            <Route path='/read' component={ReadArticle} />
+          </Switch>
+        </Router>
       </Content>
     </AppWrapper>
   );

@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import { injectIntl } from 'react-intl';
+import { Link } from "react-router-dom";
 
 import Button from 'components/Button';
-import { TextArea, InsertArticleWrapper } from './InsertArticle.styled'
-import { Margin } from 'components/Layouts';
+import { TextArea } from './InsertArticle.styled'
+import { Margin, PageWrapper } from 'components/Layouts';
 import { ArrowRight } from 'components/Icons';
 
 import { colors } from 'utils';
@@ -16,20 +17,22 @@ const InsertArticle = ({ intl }) => {
         setArticle(value)
     }
     return (
-        <InsertArticleWrapper>
+        <PageWrapper>
             <TextArea
                 onChange={handleChangeArticle}
                 article={article}
                 placeholder={placeholder} />
             <Margin top="16">
-                <Button
-                    height="50"
-                    width="740"
-                    tWidth="470"
-                    mWidth="310"
-                    rightIcon={<ArrowRight fill={colors.chelseaCucumber} />} />
+                <Link to="/read">
+                    <Button
+                        height="50"
+                        width="740"
+                        tWidth="470"
+                        mWidth="310"
+                        rightIcon={<ArrowRight fill={colors.chelseaCucumber} />} />
+                </Link>
             </Margin>
-        </InsertArticleWrapper>
+        </PageWrapper>
     )
 }
 

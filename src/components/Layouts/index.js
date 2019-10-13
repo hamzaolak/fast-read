@@ -1,1 +1,1 @@
-export { Margin, Padding, TextWrapper} from './Layouts'
+export { Margin, Padding, TextWrapper, PageWrapper} from './Layouts'

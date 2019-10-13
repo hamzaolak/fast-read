@@ -21,3 +21,12 @@ export const TextWrapper = styled.div`
     ${({ fontSize }) => fontSize && `font-size: ${fontSize}px;`}
     ${({ fontColor }) => fontColor && `color: ${fontColor};`}
 `
+
+export const PageWrapper = styled.div`
+    display: flex;
+    flex-flow: column;
+    flex-grow: 1;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+`;

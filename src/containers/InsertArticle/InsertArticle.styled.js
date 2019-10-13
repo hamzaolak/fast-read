@@ -2,15 +2,6 @@ import styled from 'styled-components'
 
 import { colors, deviceSizes } from 'utils'
 
-export const InsertArticleWrapper = styled.div`
-    display: flex;
-    flex-flow: column;
-    flex-grow: 1;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-`;
-
 export const TextArea = styled.textarea`
     border-color: ${colors.purpleDarkColor};
     border-width: 1px;
