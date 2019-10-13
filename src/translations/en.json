@@ -1,3 +1,6 @@
 {
-    "appName": "Fast Read"
+    "appName": "Fast Read",
+    "insertArticle.placeholder": "Paste The Article Here",
+    "insertArticle.button": "Start Read",
+    "insertArticle.action.tooLongWord": "/*Too Long Word*/"
 }
