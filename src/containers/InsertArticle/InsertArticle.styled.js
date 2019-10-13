@@ -26,5 +26,4 @@ export const TextArea = styled.textarea`
     @media (max-width: ${deviceSizes.mobile}) {
         width: 290px;
     }
-
 `

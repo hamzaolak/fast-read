@@ -15,8 +15,8 @@ function App() {
       <Content>
         <Router>
           <Switch>
-            <Route exact path='/' component={InsertArticle} />
             <Route path='/read' component={ReadArticle} />
+            <Route path='/' component={InsertArticle} />
           </Switch>
         </Router>
       </Content>
