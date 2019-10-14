@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { colors, deviceSizes } from 'utils'
 
 export const TextArea = styled.textarea`
-    border-color: ${colors.purpleDarkColor};
+    border-color: ${colors.primaryDarkColor};
     border-width: 1px;
     border-radius: 20px;
     height: 340px;
@@ -11,7 +11,7 @@ export const TextArea = styled.textarea`
     padding: 10px;
     text-align: ${({ article }) => article ? 'left' : 'center'};
     line-height: ${({ article }) => article ? '18px' : '340px'};
-    font-color: ${({ article }) => article ? colors.codGray : colors.tundora}
+    font-color: ${({ article }) => article ? colors.secondaryDarkColor : colors.secondaryColor}
 
     &: focus {
         text-align: left;

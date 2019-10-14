@@ -3,11 +3,11 @@ import styled from 'styled-components'
 import { colors, deviceSizes } from 'utils'
 
 export const ButtonWrapper = styled.div`
-    border-color: ${colors.purpleDarkColor};
+    border-color: ${colors.primaryDarkColor};
     border-width: 2px;
     border-radius: 20px;
     border-style: solid;
-    background-color: ${colors.white};
+    background-color: ${colors.markedColor};
     display: flex;
     flex-flow: row;
     align-items: center;
@@ -25,7 +25,7 @@ export const ButtonWrapper = styled.div`
     }
 
     :hover {
-        background-color: ${colors.alabasterapprox};
+        background-color: ${colors.descriptionTextColor};
     }
 `
 

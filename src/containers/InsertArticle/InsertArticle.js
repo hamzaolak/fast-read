@@ -33,7 +33,7 @@ const InsertArticle = ({ intl, insertArticle }) => {
                         tWidth="470"
                         mWidth="310"
                         onClick={() => insertArticle(article,tooLongWordMsg)}
-                        rightIcon={<ArrowRight fill={colors.chelseaCucumber} />} />
+                        rightIcon={<ArrowRight fill={colors.textColor} />} />
                 </Link>
             </Margin>
         </PageWrapper>

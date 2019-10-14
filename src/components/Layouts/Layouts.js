@@ -17,7 +17,7 @@ export const Padding = styled.div`
 `
 
 export const TextWrapper = styled.div`
-    color: ${colors.codGray};
+    color: ${colors.secondaryDarkColor};
     ${({ fontSize }) => fontSize && `font-size: ${fontSize}px;`}
     ${({ fontColor }) => fontColor && `color: ${fontColor};`}
 `
