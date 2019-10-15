@@ -1,23 +1,24 @@
 import React from 'react'
 
-import { PageWrapper } from 'components/Layouts'
-import Word from './components/Word'
+import { PageWrapper, TextWrapper } from 'components/Layouts'
+import Badge from 'components/Badge'
 import { colors } from 'utils'
 
 const ReadArticle = () => {
     return (
-    <PageWrapper>
-        Read Page 
-        <Word borderColor={colors.guardsmanRed}>
-            word
-        </Word>
-        <Word borderColor={colors.purpleDarkColor}>
-            word2
-        </Word>
-        <Word noBorder>
-            word3
-        </Word>
-    </PageWrapper>
-    )}
+        <PageWrapper>
+            Read Page
+        <Badge color={colors.guardsmanRed}>
+            <TextWrapper fontSize="16">word</TextWrapper>
+        </Badge>
+        <Badge color={colors.purpleDarkColor}>
+            <TextWrapper fontSize="16">word2</TextWrapper>
+        </Badge>
+        <Badge>
+            <TextWrapper fontSize="16">word3</TextWrapper>
+        </Badge>
+        </PageWrapper>
+    )
+}
 
 export default ReadArticle;
