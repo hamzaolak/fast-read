@@ -1,10 +1,11 @@
 export const colors = {
     primaryColor: "#E1D5E7",
     primaryDarkColor: "#9673A6",
-    secondaryColor: "#4D4D4D",
-    secondaryDarkColor: "#1A1A1A",
-    textColor: "#82B366",
-    descriptionTextColor: "#FBFBFB",
+    secondaryColor: "#D5E8D4",
+    secondaryDarkColor: "#82B366",
+    textColor: "#1A1A1A",
+    descriptionTextColor: "#4D4D4D",
+    hoverColor: "#FBFBFB",
     markedColor: "#FFFFFF"
 }
 
