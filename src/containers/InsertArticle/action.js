@@ -1,6 +1,6 @@
 import uid from 'uid'
 
-import { INSERT_ARTICLE } from './InsertArticle.constants'
+import { INSERT_ARTICLE } from './constants'
 
 export const insertAticle = (article, tooLongWord) => {
     const wordList = article.split(' ').map(word =>
