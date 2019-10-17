@@ -3,13 +3,13 @@ import React from 'react'
 import { PageWrapper, TextWrapper } from 'components/Layouts'
 import Badge from 'components/Badge'
 import { colors } from 'utils'
-import Step from 'components/Steps/Step'
+import Steps from 'components/Steps/Steps'
 
 const ReadArticle = () => {
     return (
         <PageWrapper>
             <TextWrapper fontSize="16">Read Page</TextWrapper>
-            <Step />
+            <Steps />
             <Badge color={colors.guardsmanRed}>
                 <TextWrapper fontSize="16">word</TextWrapper>
             </Badge>

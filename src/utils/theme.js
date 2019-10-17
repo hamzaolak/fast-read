@@ -6,7 +6,8 @@ export const colors = {
     chelseaCucumber: "#82B366",
     alabasterapprox: "#FBFBFB",
     white: "#FFFFFF",
-    guardsmanRed: "#CC0000"
+    guardsmanRed: "#CC0000",
+    success: "#D5E8D4"
 }
 
 export const deviceSizes = {
