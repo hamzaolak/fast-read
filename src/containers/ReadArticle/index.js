@@ -3,13 +3,20 @@ import React from 'react'
 import { PageWrapper, TextWrapper } from 'components/Layouts'
 import Badge from 'components/Badge'
 import { colors } from 'utils'
-import Steps from 'components/Steps/Steps'
+import {Step, Steps} from 'components/Steps'
 
 const ReadArticle = () => {
     return (
         <PageWrapper>
             <TextWrapper fontSize="16">Read Page</TextWrapper>
-            <Steps />
+            <Steps stepNumber={2}>
+                <Step />
+                <Step />
+                <Step />
+                <Step />
+                <Step />
+                <Step />
+            </Steps>
             <Badge color={colors.guardsmanRed}>
                 <TextWrapper fontSize="16">word</TextWrapper>
             </Badge>

@@ -1,13 +1,14 @@
 import React from 'react'
+import { get } from 'lodash';
 
-import { StepWrapper, StepCircle, StepLine } from './Step.styled'
-import { Check, Here } from 'components/Icons'
+import { StepWrapper, StepLine } from './Step.styled'
+import { STATUS_ICON } from './constants'
 
-const Step = ({ success, current }) => {
+const Step = ({ status }) => {
     return (
         <StepWrapper>
-            {(success && <Check />) || (current && <Here />) || <StepCircle success={success} current={current}></StepCircle>}
-            <StepLine success={success} />
+            {get(STATUS_ICON,status)}
+            <StepLine success={status === 'success'} />
         </StepWrapper>
     )
 }

@@ -9,15 +9,6 @@ export const StepWrapper = styled.div`
     :last-child{
         flex-grow: 0;
     }
-    }
-`
-export const StepCircle = styled.div`
-    border: 1px solid ${({ success, current }) => (success && colors.success) || (current && colors.purpleDarkColor) || colors.tundora};
-    width: 26px;
-    height: 26px;
-    line-height: 26px;
-    text-align: center;
-    border-radius: 26px;
 `
 
 export const StepLine = styled.div`

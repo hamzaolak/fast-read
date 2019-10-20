@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://hamzaolak.github.io/fast-read",
   "dependencies": {
+    "lodash": "^4.17.15",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-intl": "^3.3.2",

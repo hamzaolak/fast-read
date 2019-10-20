@@ -2,9 +2,24 @@ import React from 'react'
 
 import { colors } from 'utils/theme'
 
+export const Circle = ({
+    fill = colors.white,
+    color = colors.tundora,
+    r=12
+    }) =>{
+    const cXY = r+1;
+    const heightWidth = cXY * 2;
+
+    return(
+        <svg height={heightWidth} width={heightWidth}>
+            <circle stroke={color} stroke-width="2" fill="transparent"  cx={cXY} cy={cXY} r={r}/>
+        </svg>
+    )
+}
+
 export const Here = ({ fill = colors.purpleDarkColor, width = 24, height = 32 }) =>{
     return (
-        <svg width={width} height={height} viewBox="0 0 14 20" >
+        <svg width={width} height={height}>
             <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                 <g id="Rounded" transform="translate(-377.000000, -1306.000000)">
                     <g id="Communication" transform="translate(100.000000, 1162.000000)">
