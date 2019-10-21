@@ -16,7 +16,7 @@ function App() {
         <Router>
           <Switch>
             <Route path='/read' component={ReadArticle} />
-            <Route path='/' component={InsertArticle} />
+            <Route path='/:articleId' component={InsertArticle} />
           </Switch>
         </Router>
       </Content>

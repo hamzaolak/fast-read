@@ -5,7 +5,7 @@ const initialState = []
 export const articleList = (state = initialState, action) => {
     switch (action.type) {
         case INSERT_ARTICLE:
-            return Object.assign({}, state,
+            return Object.assign([], state,
                 [
                     ...state,
                     {

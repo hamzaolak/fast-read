@@ -1,33 +1,23 @@
 import React from 'react'
+import { connect } from 'react-redux'
+import { useParams } from "react-router-dom";
+import { Step, StepList } from 'basic-react-steps'
 
-import { PageWrapper, TextWrapper } from 'components/Layouts'
-import Badge from 'components/Badge'
-import { colors } from 'utils'
-import {Step, Steps} from 'components/Steps'
+import { PageWrapper } from 'components/Layouts'
 
-const ReadArticle = () => {
+const ReadArticle = ({ articleList }) => {
+    const { articleId } = useParams();
     return (
         <PageWrapper>
-            <TextWrapper fontSize="16">Read Page</TextWrapper>
-            <Steps stepNumber={2}>
-                <Step />
-                <Step />
-                <Step />
-                <Step />
-                <Step />
-                <Step />
-            </Steps>
-            <Badge color={colors.guardsmanRed}>
-                <TextWrapper fontSize="16">word</TextWrapper>
-            </Badge>
-            <Badge color={colors.purpleDarkColor}>
-                <TextWrapper fontSize="16">word2</TextWrapper>
-            </Badge>
-            <Badge>
-                <TextWrapper fontSize="16">word3</TextWrapper>
-            </Badge>
+            <StepList stepNumber={0}>
+
+            </StepList>
         </PageWrapper>
     )
 }
 
-export default ReadArticle;
+const mapStateToProps = ({ articleList }) => ({
+    articleList
+})
+
+export default connect(mapStateToProps)(ReadArticle);
