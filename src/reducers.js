@@ -1,8 +1,9 @@
 import { combineReducers } from 'redux'
-import { insertArticleReducer } from './containers/InsertArticle/InsertArticle.reducer'
+
+import { articleList } from './containers/InsertArticle/reducer'
 
 const reducers = combineReducers({
-    insertArticleReducer
+    articleList
     })
 
 export default reducers
