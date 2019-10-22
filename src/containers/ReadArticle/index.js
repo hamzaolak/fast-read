@@ -6,6 +6,7 @@ import { last, head, find } from 'lodash'
 
 import { PageWrapper } from 'components/Layouts'
 import Badge from 'components/Badge';
+import { ArticleWrapper } from './styled';
 
 const ReadArticle = ({ articleList }) => {
     const { articleId } = useParams();
@@ -14,13 +15,15 @@ const ReadArticle = ({ articleList }) => {
     if (!article) window.location.href = '/'
     const { numberOfPage, currentPage, wordList } = article
     return (
-        <PageWrapper>
+        <PageWrapper flexStart>
             <StepList stepNumber={currentPage}>
                 {Array(numberOfPage).fill(<Step />)}
             </StepList>
-            {wordList.map( word => {
-                return <Badge color='#fbfcf1'>{word}</Badge>
-            })}
+            <ArticleWrapper>
+                {wordList.map(word => {
+                    return <Badge color='#fbfcf1'>{word}</Badge>
+                })}
+            </ArticleWrapper>
         </PageWrapper>
     )
 }

@@ -28,5 +28,7 @@ export const PageWrapper = styled.div`
     flex-grow: 1;
     width: 100%;
     justify-content: center;
+    ${({ flexStart }) => flexStart && `justify-content: flex-start;`}
+    ${({ flexEnd }) => flexEnd && `justify-content: flex-end;`}
     align-items: center;
 `;
