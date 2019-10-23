@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { injectIntl } from 'react-intl';
+import { injectIntl, FormattedMessage } from 'react-intl';
 import { Link } from "react-router-dom";
 import { connect } from 'react-redux'
 
@@ -32,8 +32,10 @@ const InsertArticle = ({ intl, insertArticle }) => {
                         width="740"
                         tWidth="470"
                         mWidth="310"
-                        onClick={() => insertArticle(article,tooLongWordMsg)}
-                        rightIcon={<ArrowRight fill={colors.chelseaCucumber} />} />
+                        onClick={() => insertArticle(article, tooLongWordMsg)}
+                        rightIcon={<ArrowRight fill={colors.chelseaCucumber} />} >
+                        <FormattedMessage id='insertArticle.button' />
+                    </Button>
                 </Link>
             </Margin>
         </PageWrapper>
