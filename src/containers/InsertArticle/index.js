@@ -5,7 +5,7 @@ import { connect } from 'react-redux'
 
 import Button from 'components/Button';
 import { Margin, PageWrapper } from 'components/Layouts';
-import { ArrowRight } from 'components/Icons';
+import { Arrow } from 'components/Icons';
 import { TextArea } from './styled'
 
 import { colors } from 'utils';
@@ -33,7 +33,7 @@ const InsertArticle = ({ intl, insertArticle }) => {
                         tWidth="470"
                         mWidth="310"
                         onClick={() => insertArticle(article, tooLongWordMsg)}
-                        rightIcon={<ArrowRight fill={colors.chelseaCucumber} />} >
+                        rightIcon={<Arrow fill={colors.chelseaCucumber} />} >
                         <FormattedMessage id='insertArticle.button' />
                     </Button>
                 </Link>

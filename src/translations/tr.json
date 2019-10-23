@@ -2,6 +2,5 @@
     "appName": "Hızlı Oku",
     "insertArticle.placeholder": "Yazıyı Buraya Yapıştırınız",
     "insertArticle.button": "Okumaya Başla",
-    "insertArticle.action.tooLongWord": "/*Çok uzun kelime*/",
-    "readArticle.button.next": "Sonraki Paragraf"
+    "insertArticle.action.tooLongWord": "/*Çok uzun kelime*/"
 }
