@@ -11,7 +11,6 @@ export const articleList = (state = initialState, action) => {
                     {
                         id: action.article.id,
                         numberOfPage: action.article.numberOfPage,
-                        currentPage: action.article.currentPage,
                         wordList: action.article.wordList,
                     }
                 ])

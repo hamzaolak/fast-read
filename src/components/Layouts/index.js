@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { colors } from 'utils'
 
 export const Margin = styled.div`
+    ${({ margin }) => margin && `margin: ${margin}px`}
     ${({ top }) => top && `margin-top: ${top}px`}
     ${({ bottom }) => bottom && `margin-bottom: ${bottom}px`}
     ${({ right }) => right && `margin-right: ${right}px`}
@@ -10,6 +11,7 @@ export const Margin = styled.div`
 `
 
 export const Padding = styled.div`
+    ${({ padding }) => padding && `padding: ${padding}px`}
     ${({ top }) => top && `padding-top: ${top}px;`}
     ${({ bottom }) => bottom && `padding-bottom: ${bottom}px;`}
     ${({ right }) => right && `padding-right: ${right}px;`}
