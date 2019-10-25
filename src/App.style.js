@@ -13,12 +13,12 @@ export const Header = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: ${colors.purpleColor};
+    background-color: ${colors.primaryColor};
     height:50px;
     font-weight: bold;
     border-style: solid;
     border-width: 1px;
-    border-color: ${colors.purpleDarkColor};
+    border-color: ${colors.primaryDarkColor};
 `;
 
 export const Content = styled.div`

@@ -3,8 +3,8 @@ import React from 'react'
 import { colors } from 'utils/theme'
 
 export const Circle = ({
-    fill = colors.white,
-    color = colors.tundora,
+    fill = colors.backgroundColor,
+    color = colors.textDescriptionColor,
     r=12
     }) =>{
     const cXY = r+1;
@@ -17,7 +17,7 @@ export const Circle = ({
     )
 }
 
-export const Here = ({ fill = colors.purpleDarkColor, width = 24, height = 32 }) =>{
+export const Here = ({ fill = colors.primaryDarkColor, width = 24, height = 32 }) =>{
     return (
         <svg width={width} height={height}>
             <g id="Icons" stroke="none" strokeWidth="1" fill="none" fill-rule="evenodd">
@@ -37,7 +37,7 @@ export const Here = ({ fill = colors.purpleDarkColor, width = 24, height = 32 })
     )
 }
 
-export const Check = ({ color = colors.success, width = 24, height = 24 }) => {
+export const Check = ({ color = colors.secondaryColor, width = 24, height = 24 }) => {
     return(
         <svg width={width} height={height} fill="none" stroke={color} strokeWidth="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check-circle">
             <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>

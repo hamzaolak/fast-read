@@ -65,7 +65,7 @@ const ReadArticle = ({ articleList, markWord, readWord, markedWordList, readWord
                             height="50"
                             width="50"
                             onClick={() => previousPage()}
-                            leftIcon={<Arrow fill={colors.chelseaCucumber} left />} >
+                            leftIcon={<Arrow fill={colors.secondaryDarkColor} left />} >
                         </Button>
                     </Margin>}
                 <ArticleWrapper>
@@ -73,7 +73,7 @@ const ReadArticle = ({ articleList, markWord, readWord, markedWordList, readWord
                         return (
                             <Margin key={index} margin="2">
                                 <Badge
-                                    color={(isMarked(word) && colors.chelseaCucumber) || (isReadWord(word) && 'transparent') || colors.purpleColor}
+                                    color={(isMarked(word) && colors.secondaryDarkColor) || (isReadWord(word) && 'transparent') || colors.primaryColor}
                                     onClick={() => markWordWithFilter(word)}>{word}</Badge>
                             </Margin>
                         )
@@ -85,7 +85,7 @@ const ReadArticle = ({ articleList, markWord, readWord, markedWordList, readWord
                             height="50"
                             width="50"
                             onClick={() => nextPage()}
-                            rightIcon={<Arrow fill={colors.chelseaCucumber} />} >
+                            rightIcon={<Arrow fill={colors.secondaryDarkColor} />} >
                         </Button>
                     </Margin>}
             </ParagraphWrapper>
