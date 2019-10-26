@@ -33,7 +33,7 @@ const InsertArticle = ({ intl, insertArticle }) => {
                         tWidth="470"
                         mWidth="310"
                         onClick={() => insertArticle(article, tooLongWordMsg)}
-                        rightIcon={<Arrow fill={colors.chelseaCucumber} />} >
+                        rightIcon={<Arrow fill={colors.secondaryDarkColor} />} >
                         <FormattedMessage id='insertArticle.button' />
                     </Button>
                 </Link>

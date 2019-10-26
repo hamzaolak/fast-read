@@ -1,13 +1,13 @@
 export const colors = {
-    purpleColor: "#E1D5E7",
-    purpleDarkColor: "#9673A6",
-    tundora: "#4D4D4D",
-    codGray: "#1A1A1A",
-    chelseaCucumber: "#82B366",
-    alabasterapprox: "#FBFBFB",
-    white: "#FFFFFF",
-    guardsmanRed: "#CC0000",
-    success: "#D5E8D4"
+    primaryColor: "#E1D5E7",
+    primaryDarkColor: "#E1D5E7",
+    textDescriptionColor: "#4D4D4D",
+    textColor: "#1A1A1A",
+    secondaryColor: "#D5E8D4",
+    secondaryDarkColor: "#82B366",
+    backgroundHoverColor: "#FBFBFB",
+    backgroundColor: "#FFFFFF",
+    alertColor: "#CC0000"
 }
 
 export const deviceSizes = {
