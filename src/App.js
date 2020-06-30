@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { AppWrapper, Header, Content } from './App.style'
 import InsertArticle from 'containers/InsertArticle'
 import ReadArticle from 'containers/ReadArticle';
-//Add commemd
+
 function App() {
   return (
     <AppWrapper >
